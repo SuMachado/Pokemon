@@ -15,7 +15,9 @@ import { SearchAreaComponent } from './search-area/search-area.component';
 import { PrivateZoneComponent } from './private-zone/private-zone.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { LoginComponent } from './login/login.component';
-import { CaptionFormatPipe } from './Pipes/caption-format.pipe';
+import { TypeColorPipe } from './Pipes/type-color.pipe';
+
+
 
 
 
@@ -31,8 +33,8 @@ import { CaptionFormatPipe } from './Pipes/caption-format.pipe';
     PrivateZoneComponent,
     HomepageComponent,
     LoginComponent,
-    CaptionFormatPipe,
-       
+    TypeColorPipe,
+    
   ],
   imports: [
     FormsModule,

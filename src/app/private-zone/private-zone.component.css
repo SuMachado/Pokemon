@@ -3,10 +3,31 @@ body {
   color: white;
   font-family: 'Arial', sans-serif;
   padding: 20px;
+  text-align: center;
 }
 
 h1, h2 {
+  color: #FFD700; 
+}
+
+h3 {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 1.5em; /* Tamanho da fonte */
   color: #FFD700; /* Cor amarela */
+  text-align: center; /* Centraliza o texto */
+  margin-top: 20px; /* Adiciona um espaçamento superior */
+  padding: 10px; /* Adiciona preenchimento ao redor do texto */
+  background-color: #333; /* Cor de fundo */
+  border-radius: 10px; /* Borda arredondada */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
+}
+
+
+.formatted-caption {
+  font-size: 70%;
+  font-weight: bold;
+  font-style: italic; 
+  text-align: center;
 }
 
 section {
@@ -18,6 +39,16 @@ img {
   height: auto;
   display: block;
   margin: 0 auto; /* Centraliza a imagem */
+}
+.image-container {
+  max-width: 800px; /* Defina a largura máxima desejada para o conteúdo */
+  margin: 0 auto; /* Centraliza a div na página */
+}
+
+@media (min-width: 768px) {
+  img {
+    max-width: 80%; /* Ajuste esse valor conforme necessário */
+  }
 }
 
 p {

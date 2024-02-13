@@ -1,4 +1,4 @@
-<div *ngIf="pokemon" class="card-container">
+<div *ngIf="pokemon" [ngClass]="pokemon.types | typeColor" class="card-container">
   <h2>{{pokemon.name}} Details</h2>
   <div><span>id: </span>{{pokemon.id}}</div>
   <div>
@@ -18,7 +18,7 @@
     <input id="pokemon-family" [(ngModel)]="pokemon.family" placeholder="Family"> <br />
 
     <br />
-    <button type="button" (click)="save()">Save</button>  
+    <button type="button" (click)="save()">Save</button>
     <button type="button" (click)="goBack()">Go Back</button>
   </div>
 </div>

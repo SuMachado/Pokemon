@@ -10,8 +10,15 @@
 }
 
 .pokemon-app-header__image img {
-  width: 120px; 
+  width: 120px;
   height: auto;
+}
+.pikachu-img {
+  width: 50px;
+  height: auto;
+  border: none;
+  margin: 0; 
+  padding: 0
 }
 
 .authentication {

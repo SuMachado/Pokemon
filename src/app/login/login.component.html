@@ -3,13 +3,14 @@
 <div *ngIf="!isLoggedIn; else loggedInMessage">
   <form (ngSubmit)="login()">
     <div>
-      <label for="username">Username:</label>
+      <label for="username">Username: &nbsp;</label>
       <input type="text" id="username" name="username" [(ngModel)]="username" required>
     </div>
     <div>
-      <label for="password">Password:</label>
+      <label for="password">Password: &nbsp;&nbsp;</label>
       <input type="password" id="password" name="password" [(ngModel)]="password" required>
     </div>
+    <br/>
     <button type="submit">Login</button>
   </form>
 </div>
