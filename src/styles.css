@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+.header {
+  text-align: center;
+}
+
+
+
+.pokemon-app-header__image img {
+  display: inline-block; 
+  margin: 0 auto; 
+}
+body {
+  text-align: center;
+  background-color: #151212;
+  color:#e8e6e6
+}

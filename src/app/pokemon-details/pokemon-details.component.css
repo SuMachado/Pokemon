@@ -1,0 +1,78 @@
+/* Estilo do contêiner principal */
+.card-container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #e5e3e3;
+  color: #333;
+}
+
+  /* Estilos para o cabeçalho */
+  .card-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+
+  .card-container img {
+    width: 200px;
+   /* height: 200px;*/
+    border-radius: 5px;
+    margin-bottom: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card-container label {
+    font-weight: bold;
+    color: #555;
+  }
+
+  .card-container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    background-color:#ececec
+  }
+
+  .card-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+    .card-container ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+
+  .card-container button {
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  .card-container button:hover {
+     background-color: #2980b9;
+  }
+
+  .card-container span {
+    font-weight: bold;
+  }
+
+  .card-container button {
+    margin-right: 10px; 
+  }
+
+

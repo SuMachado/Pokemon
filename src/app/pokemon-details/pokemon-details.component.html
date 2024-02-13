@@ -1,0 +1,24 @@
+<div *ngIf="pokemon" class="card-container">
+  <h2>{{pokemon.name}} Details</h2>
+  <div><span>id: </span>{{pokemon.id}}</div>
+  <div>
+    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{ pokemon.id }}.png" alt="pokemon" />
+    <br />
+    <label for="pokemon-height">Height: </label>
+    <input id="pokemon-height" [(ngModel)]="pokemon.height" placeholder="Height"> <br />
+    <label for="pokemon-weight">Weight: </label>
+    <input id="pokemon-weight" [(ngModel)]="pokemon.weight" placeholder="Weight"> <br />
+    <div>
+      <label for="pokemon-types">Types: </label>
+      <ul>
+        <li *ngFor="let type of pokemon.types">{{type}}</li>
+      </ul>
+    </div>
+    <label for="pokemon-family">Family: </label>
+    <input id="pokemon-family" [(ngModel)]="pokemon.family" placeholder="Family"> <br />
+
+    <br />
+    <button type="button" (click)="save()">Save</button>  
+    <button type="button" (click)="goBack()">Go Back</button>
+  </div>
+</div>

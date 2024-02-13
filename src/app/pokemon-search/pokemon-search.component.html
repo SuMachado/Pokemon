@@ -1,0 +1,14 @@
+<div id="search-component">
+  <div class="search-box-container">
+    <label for="search-box">Please insert pokemon ID or NAME: </label>
+    <input #searchBox id="search-box" (input)="search(searchBox.value)" />
+  </div>
+
+  <ul class="search-result">
+    <li *ngFor="let pokemon of pokemons$ | async">
+      <a routerLink="/detail/{{pokemon.id}}">
+        {{pokemon.name}}
+      </a>
+    </li>
+  </ul>
+</div>

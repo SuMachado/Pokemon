@@ -1,0 +1,60 @@
+/* Adicione ao seu arquivo de estilos CSS */
+#search-component {
+  text-align: center; /* Centraliza o conteúdo horizontalmente */
+  margin: 20px 0; /* Adiciona margem superior e inferior */
+}
+
+.search-box-container {
+  display: inline-block;
+  background-color: #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 10px; /* Adiciona um espaço entre o rótulo e o campo de entrada */
+  color: #0c84f7
+}
+
+#search-box {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc; /* Adiciona uma borda ao campo de entrada */
+  border-radius: 5px; /* Adiciona bordas arredondadas */
+}
+
+  /* Adiciona um estilo quando o campo de entrada está focado */
+  #search-box:focus {
+    outline: none; /* Remove a borda de foco padrão */
+    border-color: #3498db; /* Altera a cor da borda quando o campo está focado */
+  }
+
+.search-result {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajuste a largura da grade conforme necessário */
+  gap: 10px; /* Ajuste o espaçamento entre os botões conforme necessário */
+}
+
+  .search-result li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+    .search-result li a {
+      display: block;
+      padding: 10px;
+      background-color: #3498db;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+      .search-result li a:hover {
+        background-color: #2980b9;
+      }

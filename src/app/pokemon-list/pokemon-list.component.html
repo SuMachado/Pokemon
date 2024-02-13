@@ -1,0 +1,21 @@
+<div class="pokemon-grid">
+  <div class="box" *ngFor="let pokemon of pokemons">
+       <!--| paginate :{ itemsPerPage :10, currentPage:page, totalItems: totalPokemons}-->
+    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{ pokemon.id }}.png" alt="pokemon" />
+    <h3> {{ pokemon.name }}</h3>
+    <p>
+      <b>Type:</b> {{ pokemon.types.join(', ') }}
+    </p>
+    <p>
+      <b>Height:</b> {{pokemon.height}}
+    </p>
+    <p>
+      <b>Weight:</b> {{pokemon.weight}}
+    </p>
+    <p>
+      <b>Family:</b> {{pokemon.family}}
+    </p>
+  </div>
+</div>
+
+<!--<pagination-controls (pageChange)="page = $event"></pagination-controls>-->
