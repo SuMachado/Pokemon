@@ -1,28 +1,30 @@
 
-  <div class="card-container">
-    <div *ngIf="successMessage" class="success-message">
-      {{ successMessage }}
-    </div>
-    <h2>Add New Pokemon</h2>
-    <form (ngSubmit)="addPokemon()">
-      <label for="name">Name: </label>&nbsp;&nbsp;
-      <input type="text" id="name" [(ngModel)]="newPokemon.name" placeholder="name" #name="ngModel" name="name" required><br />
-
-      <label for="height">Height: </label>&nbsp;
-      <input type="text" id="height" [(ngModel)]="newPokemon.height" placeholder="height" #height="ngModel" name="height" required><br />
-
-      <label for="weight">Weight:</label>&nbsp;
-      <input type="text" id="weight" [(ngModel)]="newPokemon.weight" placeholder="weight" #weight="ngModel" name="weight" required><br />
-
-      <label for="types">Types:  </label>&nbsp;&nbsp;
-      <input type="text" id="types" [(ngModel)]="newPokemon.types" placeholder="types" #types="ngModel" name="types" required><br />
-
-      <label for="family">Family:</label>&nbsp;
-      <input type="text" id="family" [(ngModel)]="newPokemon.family" placeholder="family" #family="ngModel" name="family" required><br />
-
-      <button type="submit">Add Pokemon</button> &nbsp;
-      <!--<button type="button" (click)="addPokemon()">Add Pokemon</button>-->
-      <button type="button" (click)="goBack()">Go Back</button>
-    </form>
+<div class="card-container">
+  <div *ngIf="successMessage" class="success-message">
+    {{ successMessage }}
   </div>
+  <h2>Add New Pokemon</h2>
+  <form (ngSubmit)="addPokemon()">
+    <label for="name">Name: </label>&nbsp;&nbsp;
+    <input type="text" id="name" [(ngModel)]="newPokemon.name" placeholder="name" #name="ngModel" name="name" required><br />
+
+    <label for="height">Height: </label>&nbsp;
+    <input type="text" id="height" [(ngModel)]="newPokemon.height" placeholder="height" #height="ngModel" name="height" required><br />
+
+    <label for="weight">Weight:</label>&nbsp;
+    <input type="text" id="weight" [(ngModel)]="newPokemon.weight" placeholder="weight" #weight="ngModel" name="weight" required><br />
+
+    <label for="types">Types:  </label>&nbsp;&nbsp;
+    <input type="text" id="types" [(ngModel)]="newPokemon.types" placeholder="types" #types="ngModel" name="types" required><br />
+
+    <label for="family">Family:</label>&nbsp;
+    <input type="text" id="family" [(ngModel)]="newPokemon.family" placeholder="family" #family="ngModel" name="family" required><br />
+
+    <button type="submit">Add Pokemon</button> &nbsp;
+    <!--<button type="button" (click)="addPokemon()">Add Pokemon</button>-->
+    <button type="button" (click)="goBack()">Go Back</button>
+  </form>
+  <br/>
+  <img src="assets/images/pikachufriends.gif" alt="pikachu and friends">
+</div>
 

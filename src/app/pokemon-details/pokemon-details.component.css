@@ -8,18 +8,18 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: #e5e3e3;
   color: #000;
-  opacity: 0.75;
+  opacity: 0.65;
 }
 
   .card-container ul li {
-    color: #000; /* Cor do texto para os itens da lista */
+    color: #fff; /* Cor do texto para os itens da lista */
   }
 
   /* Estilos para o cabeçalho */
   .card-container h2 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #000;
+    color: #fff;
   }
 
 
@@ -31,12 +31,12 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    color: #000;
+    color: #fff;
   }
 
   .card-container label {
     font-weight: bold;
-    color: #000;
+    color: #fff;
   }
 
   .card-container input {
@@ -77,7 +77,7 @@ default-background {
 }
 
 .background-fairy {
-  background-color: #E3E32B;
+  background-color: #971944;
   color: #fff;
 }
 
@@ -87,7 +87,7 @@ default-background {
 }
 
 .background-fire {
-  background-color: #994025;
+  background-color: #AB1F23;
   color: #fff;
 }
 

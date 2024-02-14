@@ -18,9 +18,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    opacity: 0.75;
+    opacity: 0.65;
     padding-bottom: 10px;
-    color: #000;
+    color: #fff;
   }
 
     .pokemon-grid .box img {
@@ -79,7 +79,7 @@ default-background {
 }
 
 .background-fairy {
-  background-color: #E3E32B;
+  background-color: #971944;
   color: #fff;
 }
 
@@ -89,7 +89,7 @@ default-background {
 }
 
 .background-fire {
-  background-color: #994025;
+  background-color: #AB1F23;
   color: #fff;
 }
 
