@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-private-zone',
@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./private-zone.component.css']
 })
 export class PrivateZoneComponent {
+  showScrollTopButton: boolean = false;
 
+  @HostListener('window:scroll', [])
+  onScroll(): void {
+
+    this.showScrollTopButton = window.scrollY > 300;
+  }
+
+  scrollToTop(): void {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }

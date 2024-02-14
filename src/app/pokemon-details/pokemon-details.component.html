@@ -4,9 +4,9 @@
   <div>
     <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{ pokemon.id }}.png" alt="pokemon" />
     <br />
-    <label for="pokemon-height">Height: </label>
+    <label for="pokemon-height">Height: &nbsp; </label>
     <input id="pokemon-height" [(ngModel)]="pokemon.height" placeholder="Height"> <br />
-    <label for="pokemon-weight">Weight: </label>
+    <label for="pokemon-weight">Weight: &nbsp; </label>
     <input id="pokemon-weight" [(ngModel)]="pokemon.weight" placeholder="Weight"> <br />
     <div>
       <label for="pokemon-types">Types: </label>
@@ -14,7 +14,7 @@
         <li *ngFor="let type of pokemon.types">{{type}}</li>
       </ul>
     </div>
-    <label for="pokemon-family">Family: </label>
+    <label for="pokemon-family">Family:&nbsp; </label>
     <input id="pokemon-family" [(ngModel)]="pokemon.family" placeholder="Family"> <br />
 
     <br />

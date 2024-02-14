@@ -55,3 +55,20 @@ p {
   text-align: justify;
   line-height: 1.5;
 }
+
+button.scrollToTopButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #1552E2;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+  button.scrollToTopButton:hover {
+    background-color: #0c3a9c;
+  }

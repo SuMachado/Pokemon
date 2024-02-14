@@ -7,39 +7,47 @@
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: #e5e3e3;
-  color: #333;
+  color: #000;
+  opacity: 0.75;
 }
+
+  .card-container ul li {
+    color: #000; /* Cor do texto para os itens da lista */
+  }
 
   /* Estilos para o cabeçalho */
   .card-container h2 {
     font-size: 24px;
     margin-bottom: 10px;
+    color: #000;
   }
 
 
   .card-container img {
     width: 200px;
-   /* height: 200px;*/
+    /* height: 200px;*/
     border-radius: 5px;
     margin-bottom: 5px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    color: #000;
   }
 
   .card-container label {
     font-weight: bold;
-    color: #555;
+    color: #000;
   }
 
   .card-container input {
-    width: 100%;
-    padding: 8px;
+    width: 50%;
+    padding: 5px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
     text-align: center;
-    background-color:#ececec
+    background-color:#ececec;
+    color: #000;
   }
 
 

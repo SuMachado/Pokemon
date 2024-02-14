@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { PokemondataService } from '../Services/pokemondata.service';
 import { Pokemon } from '../pokemon';
 
@@ -54,6 +54,17 @@ export class PokemonListComponent implements OnInit{
       });
   }
 
+  showScrollTopButton: boolean = false;
+
+  @HostListener('window:scroll', [])
+  onScroll(): void {
+    
+    this.showScrollTopButton = window.scrollY > 300;
+  }
+
+  scrollToTop(): void {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }
 
 
