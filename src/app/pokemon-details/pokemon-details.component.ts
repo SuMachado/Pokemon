@@ -28,15 +28,23 @@ export class PokemonDetailsComponent {
     this.pokemonService.getPokemonByID(id)
       .subscribe(pokemon => this.pokemon = pokemon);
   }
-  goBack(): void {
-    this.location.back();
-  }
-
+  
   save(): void {
     if (this.pokemon) {
       this.pokemonService.updatePokemon(this.pokemon)
         .subscribe(() => this.goBack());
     }
+  }
+
+  delete(): void {
+    if (this.pokemon) {
+      this.pokemonService.deletePokemon(this.pokemon.id)
+        .subscribe(() => this.goBack());
+    }
+  }
+
+  goBack(): void {
+    this.location.back();
   }
 
 }

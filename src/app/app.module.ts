@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './Main/app.component';
@@ -17,6 +17,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { LoginComponent } from './login/login.component';
 import { TypeColorPipe } from './Pipes/type-color.pipe';
 import { SecureConnectionInterceptor } from './Interceptors/secure-connection.interceptor';
+import { AddPokemonComponent } from './add-pokemon/add-pokemon.component';
 
 
 
@@ -35,9 +36,11 @@ import { SecureConnectionInterceptor } from './Interceptors/secure-connection.in
     HomepageComponent,
     LoginComponent,
     TypeColorPipe,
+    AddPokemonComponent,
     
   ],
   imports: [
+    ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
     BrowserModule,

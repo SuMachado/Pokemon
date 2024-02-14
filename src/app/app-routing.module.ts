@@ -9,19 +9,22 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { PrivateZoneComponent } from './private-zone/private-zone.component';
 import { PrivateZoneGuard } from './Guards/private-zone-guard.guard';
 import { LoginComponent } from './login/login.component';
+import { AddPokemonComponent } from './add-pokemon/add-pokemon.component';
 
 
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'private', component: PrivateZoneComponent, canActivate: [PrivateZoneGuard] },
-  { path : 'pokemonList', component: PokemonListComponent},
+  { path: 'pokemonList', component: PokemonListComponent },
+  { path: 'add-pokemon', component: AddPokemonComponent },
   { path: 'searchArea', component: SearchAreaComponent},
   { path: 'detail/:id', component: PokemonDetailsComponent },
   { path: 'private', component: PrivateZoneComponent, canActivate: [VerifyAuthService] },
   { path: 'home', component: HomepageComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
+ 
 ];
 
 @NgModule({
